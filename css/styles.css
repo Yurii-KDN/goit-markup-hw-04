@@ -149,11 +149,14 @@ body {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../images/hero/people-office-1.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/people-office-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: var(--color-navy-blue);
   padding: 188px 0;
 }
 /* .hero .container {
@@ -278,6 +281,9 @@ body {
   /* margin-right: 24px; */
   background-color: var(--color-white);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 /* .team-item:last-child {
   margin-right: 0;
@@ -363,6 +369,8 @@ body {
   border-color: transparent;
   color: var(--color-white);
   background-color: var(--color-ocean);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 /* Portfolio gallery */
 .portfolio-list {
@@ -370,6 +378,11 @@ body {
   flex-wrap: wrap;
   gap: 24px;
   row-gap: 48px;
+}
+.portfolio-list-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 /* .portfolio-list-item {
   margin-bottom: 48px;
