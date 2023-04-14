@@ -299,11 +299,16 @@ body {
   height: 40px;
   background-color: var(--color-iris);
   border-radius: 50%;
+  color: var(--color-cloud);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--color-ocean);
+}
+
+.social-icon {
+  fill: currentColor;
 }
 
 /* Customers */
@@ -327,15 +332,15 @@ body {
   border: 1px solid;
   border-color: var(--color-light-slate);
   border-radius: 4px;
-  fill: var(--color-light-slate);
+  color: var(--color-light-slate);
 }
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--color-ocean);
-  fill: var(--color-ocean);
+  color: var(--color-ocean);
 }
 .customers-icon {
-  /* fill: currentColor; */
+  fill: currentColor;
 }
 
 /* Footer */
@@ -401,10 +406,12 @@ body {
   gap: 24px;
   row-gap: 48px;
 }
-.portfolio-list-item:hover {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+.portfolio-link {
+  display: block;
+}
+.portfolio-link:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-card-content {
@@ -413,9 +420,9 @@ body {
   border-top: none;
   padding: 32px 16px;
 }
+
 .portfolio-title {
   margin-top: 0;
-
   margin-bottom: 8px;
   font-weight: 500;
   color: var(--color-navy-blue);
