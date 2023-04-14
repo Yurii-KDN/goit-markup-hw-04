@@ -48,18 +48,18 @@ img {
   margin: 0 auto;
 }
 
-/* Body */
+/* Body styles*/
 body {
   font-family: var(--font-primary);
   color: var(--color-slate);
   background-color: var(--color-white);
 }
-/* Header */
+/* Header styles*/
 .header {
   border-bottom: 1px solid;
   border-bottom-color: var(--color-cornflower);
 }
-/* Logo */
+/* Logo styles*/
 .logo {
   display: inline-block;
   font-family: var(--font-secondary);
@@ -81,7 +81,7 @@ body {
   color: var(--color-cloud);
 }
 
-/* Navigation */
+/* Navigation styles*/
 .navigation {
   display: flex;
   align-items: center;
@@ -112,7 +112,7 @@ body {
   color: var(--color-ocean);
 }
 
-/* Contacts */
+/* Contacts styles*/
 .contacts {
   margin-left: auto;
 }
@@ -131,7 +131,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Hero */
+/* Hero styles*/
 .hero {
   max-width: 1440px;
   margin-left: auto;
@@ -184,7 +184,7 @@ body {
   background-color: var(--color-ocean);
 }
 
-/* Our benefits */
+/* Our benefits styles*/
 
 .visually-hidden {
   position: absolute;
@@ -230,7 +230,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Work section */
+/* Work section styles*/
 .section-work {
   padding-bottom: 120px;
 }
@@ -240,11 +240,10 @@ body {
   gap: 24px;
 }
 .work-list-item {
-  /* margin-right: 24px; */
   width: calc((100%-48px) / 3);
 }
 
-/* Our team */
+/* Our team styles*/
 .section-team {
   padding: 120px 0;
   background-color: var(--color-cloud);
@@ -277,12 +276,34 @@ body {
 }
 .item-team-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 8px;
   color: var(--color-slate);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+}
+
+/* Social links styles */
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-iris);
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-ocean);
 }
 
 /* Customers */
@@ -292,11 +313,31 @@ body {
 
 .customer-list {
   display: flex;
+  align-items: center;
   gap: 24px;
 }
 
-.customers-item {
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  background-color: var(--color-white);
+  border: 1px solid;
+  border-color: var(--color-light-slate);
+  border-radius: 4px;
+  fill: var(--color-light-slate);
 }
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--color-ocean);
+  fill: var(--color-ocean);
+}
+.customers-icon {
+  /* fill: currentColor; */
+}
+
 /* Footer */
 .footer {
   padding: 100px 0;
