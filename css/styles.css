@@ -216,11 +216,13 @@ body {
 }
 
 .bg-features-icon {
+  margin-bottom: 8px;
   padding: 24px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-cloud);
+  border-radius: 4px;
 }
 
 .features-title {
