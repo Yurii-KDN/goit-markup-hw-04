@@ -360,10 +360,11 @@ body {
   border: 1px solid;
   border-color: var(--color-light-slate);
   border-radius: 4px;
-  color: var(--color-customer-logo);
+  color: var(--color-light-slate);
 }
 .customers-link:hover,
-.customers-link:focus {
+.customers-link:focus,
+.customers-link:active {
   border-color: var(--color-ocean);
   color: var(--color-ocean);
 }
