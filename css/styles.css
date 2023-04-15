@@ -11,6 +11,7 @@
   --color-grey: #2e2f42;
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
+  --color-customer-logo: #afb1b8;
   --font-primary: Roboto, sans-serif;
   --font-secondary: Raleway, sans-serif;
 }
@@ -359,7 +360,7 @@ body {
   border: 1px solid;
   border-color: var(--color-light-slate);
   border-radius: 4px;
-  color: var(--color-light-slate);
+  color: var(--color-customer-logo);
 }
 .customers-link:hover,
 .customers-link:focus {
